@@ -1,5 +1,5 @@
 {
-    "Kotlin":
+    "kotlin":
         [
 	    {
 	        "question":"Kotlin Advantages",
@@ -8,6 +8,18 @@
 	    {
 	        "question":"What is MVVM?",
 		"answer":"Android Architecture. Model View Viewmodel. 1-to-many mapping from the viewmodle to the views."
+	    }
+	]
+	
+    "android_ui":
+	[
+	    {
+	        "question":"What is a fragment",
+	        "answer":"Reusable UI component. It's lightweight and you can have multiple fragments within one activity."
+	    },
+	    {
+	        "question":"What is the activity life cycle",
+	        "answer":"onCreate() onStart() onResume() onPause() onStop() onDestroy()"
 	    }
 	]
 }
