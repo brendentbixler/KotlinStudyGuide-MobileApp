@@ -1,0 +1,13 @@
+{
+    Kotlin:
+        [
+	    {
+	        "question":"Kotlin Advantages",
+		"answer":"Easier to read and write. Data classes. Null safety. Java compatiability."
+	    },
+	    {
+	        "question":"What is MVVM?",
+		"answer":"Android Architecture. Model View Viewmodel. 1-to-many mapping from the viewmodle to the views."
+	    }
+	]
+}
