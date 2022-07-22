@@ -9,7 +9,7 @@
 	        "question":"What is MVVM?",
 		"answer":"Android Architecture. Model View Viewmodel. 1-to-many mapping from the viewmodle to the views."
 	    }
-	]
+	],
 	
     "android_ui":
 	[
