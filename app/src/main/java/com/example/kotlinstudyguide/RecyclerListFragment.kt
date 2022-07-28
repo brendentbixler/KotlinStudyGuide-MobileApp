@@ -47,8 +47,7 @@ class RecyclerListFragment : Fragment() {
         val viewModel = ViewModelProvider(this).get(MainActivityViewModel::class.java)
         viewModel.getRecyclerListObserver().observe(this, Observer<RecyclerList> {
             if(it != null) {
-//                recyclerAdapter.setUpdatedData(it.kotlin_questions)
-                recyclerAdapter.setUpdatedData(it.items)
+                recyclerAdapter.setUpdatedData(it.kotlin_questions)
             } else {
                 Toast.makeText(activity, "ERROR", Toast.LENGTH_SHORT).show()
             }

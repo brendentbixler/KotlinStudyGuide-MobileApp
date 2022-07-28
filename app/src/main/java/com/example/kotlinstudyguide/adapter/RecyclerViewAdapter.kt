@@ -7,7 +7,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.kotlinstudyguide.R
 import com.example.kotlinstudyguide.models.RecyclerData
-import com.example.kotlinstudyguide.models.RecyclerList
 
 class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder>() {
 
@@ -24,11 +23,8 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolde
         val tvAnswer = view.findViewById<TextView>(R.id.tvAnswer)
 
         fun bind(data : RecyclerData) {
-//            tvQuestion.text = data.question
-//            tvAnswer.text = data.answer
-
-            tvQuestion.text = data.name
-            tvAnswer.text = data.description
+            tvQuestion.text = data.question
+            tvAnswer.text = data.answer
         }
     }
 
