@@ -25,6 +25,7 @@
 * Figure out how to call from .json file and load correct data
 
 # Backlog
+- Commit / push new changes from master
 - Update Json to contain all the topics
 - Enhance UI
 
