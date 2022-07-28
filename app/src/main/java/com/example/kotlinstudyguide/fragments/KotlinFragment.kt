@@ -1,4 +1,4 @@
-package com.example.kotlinstudyguide
+package com.example.kotlinstudyguide.fragments
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -12,11 +12,12 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.kotlinstudyguide.R
 import com.example.kotlinstudyguide.adapter.RecyclerViewAdapter
 import com.example.kotlinstudyguide.models.RecyclerList
 import com.example.kotlinstudyguide.viewmodel.MainActivityViewModel
 
-class RecyclerListFragment : Fragment() {
+class KotlinFragment : Fragment() {
 
     private lateinit var recyclerAdapter : RecyclerViewAdapter
 
@@ -25,7 +26,7 @@ class RecyclerListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_recycler_list, container, false)
+        val view = inflater.inflate(R.layout.fragment_kotlin, container, false)
 
         initViewModel(view)
         initViewModel()
@@ -57,6 +58,6 @@ class RecyclerListFragment : Fragment() {
 
     companion object {
         fun newInstance() =
-            RecyclerListFragment()
+            KotlinFragment()
     }
 }

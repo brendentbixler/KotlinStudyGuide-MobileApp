@@ -29,7 +29,7 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolde
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_card_view, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.kotlin_card_view, parent, false)
 
         return MyViewHolder(view)
     }
