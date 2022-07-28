@@ -19,15 +19,14 @@
 - Set up CardView / RecyclerView
 - Display Json
 - Laod data into RecyclerView
+- Load correct data
 
 # Current Task
-- Load correct data
-* Figure out how to call from .json file and load correct data
+- Add Navigation bar for different topics
 
 # Backlog
-- Commit / push new changes from master
-- Update Json to contain all the topics
 - Enhance UI
+- Add Fragment that contains the answer onClick
 
 # Future Implementations
 - Add study topics for other languages
