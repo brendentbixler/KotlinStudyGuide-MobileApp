@@ -10,23 +10,23 @@
 - gh-pages > contains Github website that hosts the api to fetch from
 - master > contains Android / Kotlin source code 
 
-# Progress
+# Progress - Completed Backlog Tasks!
 - Repo Created
 - Local and remote set up
 - 3 Branches created
 - Json test is set up and located at 
-https://brendentbixler.github.io/KotlinStudyGuide-MobileApp/study.json
-- 
-- Work on current Task
+- https://brendentbixler.github.io/KotlinStudyGuide-MobileApp/study.json
+- Set up CardView / RecyclerView
+- Display Json
+- Laod data into RecyclerView
 
 # Current Task
-- API call
+- Load correct data
+* Figure out how to call from .json file and load correct data
 
 # Backlog
-- Display Json
-- Set up CardView / RecyclerView
-- Laod data into RecyclerView
 - Update Json to contain all the topics
+- Enhance UI
 
 # Future Implementations
 - Add study topics for other languages
