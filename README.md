@@ -20,11 +20,15 @@
 - Display Json
 - Laod data into RecyclerView
 - Load correct data
+- Feature - Add Navigation bar
 
 # Current Task
-- Add Navigation bar for different topics
+- Create new branch for features
+- Pull Android questions
 
 # Backlog
+- Update Json
+- Pull 3rd party questions
 - Enhance UI
 - Add Fragment that contains the answer onClick
 
