@@ -14,7 +14,8 @@
 - Repo Created
 - Local and remote set up
 - 3 Branches created
-- Json test is set up and located at TODO
+- Json test is set up and located at 
+https://brendentbixler.github.io/KotlinStudyGuide-MobileApp/study.json
 - 
 - Work on current Task
 
