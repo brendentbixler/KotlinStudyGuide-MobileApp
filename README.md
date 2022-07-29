@@ -28,12 +28,12 @@
 - Load correct data
 - Feature - Add Navigation bar
 - Add home menu item to nav bar
-
-# Current Task
 - Pull Android questions
 
-# Backlog
+# Current Task
 - Update Json
+
+# Backlog
 - Add another menu item to nav bar (5 total)
 - Bug - Fix the starting menu icon to match
 - Pull 3rd party questions
