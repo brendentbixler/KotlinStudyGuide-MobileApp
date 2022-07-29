@@ -34,8 +34,10 @@
 
 # Backlog
 - Update Json
+- Add home menu item
 - Pull 3rd party questions
 - Enhance UI
+- Fix white box at the top
 - Add Fragment that contains the answer onClick
 
 # Future Implementations
