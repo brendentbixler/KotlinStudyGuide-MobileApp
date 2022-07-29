@@ -1,9 +1,15 @@
 # KotlinStudyGuide-MobileApp
+- This is a mobile app to stay up to date on current Languages / 3rd party libraries in the Android space
 
 # About
-- Custom Json Api to pull from
 - Mobile app to display Kotlin / Android topics to stay up to date
 - Use as flashcards
+- Custom Json Api to pull from
+- RecyclerView
+- Coroutines
+- Retrofit
+- Fragments
+- MVVM
 
 # Branches
 - main > contains this README file
