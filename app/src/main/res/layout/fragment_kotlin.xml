@@ -6,7 +6,7 @@
     tools:context=".fragments.KotlinFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/kotlinRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

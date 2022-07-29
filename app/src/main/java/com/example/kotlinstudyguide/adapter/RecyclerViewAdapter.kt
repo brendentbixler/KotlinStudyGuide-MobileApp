@@ -6,39 +6,60 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.kotlinstudyguide.R
-import com.example.kotlinstudyguide.models.RecyclerData
+import com.example.kotlinstudyguide.models.AndroidRecyclerData
+import com.example.kotlinstudyguide.models.KotlinRecyclerData
 
-class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder>() {
+class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.KotlinViewHolder>() {
 
-    var items = ArrayList<RecyclerData>()
+    var kotlinItems = ArrayList<KotlinRecyclerData>() /** For Kotlin */
 
-    fun setUpdatedData(items : ArrayList<RecyclerData>) {
-        this.items = items
+    /**
+     * set Kotlin Data
+     */
+    fun setUpdatedKotlinData(items : ArrayList<KotlinRecyclerData>) {
+        this.kotlinItems = items
         notifyDataSetChanged()
     }
 
-    class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+    /**
+     * Had to put this view holder in here for some reason
+     * This is the Android Questions View Holder that is used in the Android Adapter
+     */
+    class AndroidViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val tvQuestion = view.findViewById<TextView>(R.id.tvQuestion)
+        val tvAnswer = view.findViewById<TextView>(R.id.tvAnswer)
+
+        fun androidBind(dataAndroid : AndroidRecyclerData) {
+            tvQuestion.text = dataAndroid.question
+            tvAnswer.text = dataAndroid.answer
+        }
+    }
+
+    /**
+     * Kotlin View Holder
+     */
+    class KotlinViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
         val tvQuestion = view.findViewById<TextView>(R.id.tvQuestion)
         val tvAnswer = view.findViewById<TextView>(R.id.tvAnswer)
 
-        fun bind(data : RecyclerData) {
-            tvQuestion.text = data.question
-            tvAnswer.text = data.answer
+        fun kotlinBind(dataKotlin : KotlinRecyclerData) {
+            tvQuestion.text = dataKotlin.question
+            tvAnswer.text = dataKotlin.answer
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): KotlinViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.kotlin_card_view, parent, false)
 
-        return MyViewHolder(view)
+        return KotlinViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        holder.bind(items.get(position))
+    override fun onBindViewHolder(holder: KotlinViewHolder, position: Int) {
+        holder.kotlinBind(kotlinItems.get(position))
     }
 
     override fun getItemCount(): Int {
-        return items.size
+        return kotlinItems.size
     }
 }

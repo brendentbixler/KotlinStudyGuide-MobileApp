@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.kotlinstudyguide.R
 import com.example.kotlinstudyguide.adapter.RecyclerViewAdapter
-import com.example.kotlinstudyguide.models.RecyclerList
+import com.example.kotlinstudyguide.models.KotlinRecyclerList
 import com.example.kotlinstudyguide.viewmodel.MainActivityViewModel
 
 class KotlinFragment : Fragment() {
@@ -34,7 +34,7 @@ class KotlinFragment : Fragment() {
     }
 
     private fun initViewModel(view: View) {
-        val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerView)
+        val recyclerView = view.findViewById<RecyclerView>(R.id.kotlinRecyclerView)
         recyclerView.layoutManager = LinearLayoutManager(activity)
         val decortion = DividerItemDecoration(activity, DividerItemDecoration.VERTICAL)
         recyclerView.addItemDecoration(decortion)
@@ -46,14 +46,14 @@ class KotlinFragment : Fragment() {
     @SuppressLint("FragmentLiveDataObserve")
     private fun initViewModel() {
         val viewModel = ViewModelProvider(this).get(MainActivityViewModel::class.java)
-        viewModel.getRecyclerListObserver().observe(this, Observer<RecyclerList> {
+        viewModel.getKotlinRecyclerListObserver().observe(this, Observer<KotlinRecyclerList> {
             if(it != null) {
-                recyclerAdapter.setUpdatedData(it.kotlin_questions)
+                recyclerAdapter.setUpdatedKotlinData(it.kotlin_questions)
             } else {
                 Toast.makeText(activity, "ERROR", Toast.LENGTH_SHORT).show()
             }
         })
-        viewModel.makeApiCall()
+        viewModel.makeKotlinApiCall()
     }
 
     companion object {
