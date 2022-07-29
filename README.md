@@ -27,17 +27,18 @@
 - Laod data into RecyclerView
 - Load correct data
 - Feature - Add Navigation bar
+- Add home menu item to nav bar
 
 # Current Task
-- Create new branch for features
 - Pull Android questions
 
 # Backlog
 - Update Json
-- Add home menu item
+- Add another menu item to nav bar (5 total)
+- Bug - Fix the starting menu icon to match
 - Pull 3rd party questions
 - Enhance UI
-- Fix white box at the top
+- Bug - Fix white box at the top
 - Add Fragment that contains the answer onClick
 
 # Future Implementations
