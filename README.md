@@ -29,6 +29,7 @@
 - Feature - Add Navigation bar
 - Add home menu item to nav bar
 - Pull Android questions
+- - Pull 3rd party questions
 
 # Current Task
 - Update Json
@@ -36,7 +37,6 @@
 # Backlog
 - Add another menu item to nav bar (5 total)
 - Bug - Fix the starting menu icon to match
-- Pull 3rd party questions
 - Enhance UI
 - Bug - Fix white box at the top
 - Add Fragment that contains the answer onClick
