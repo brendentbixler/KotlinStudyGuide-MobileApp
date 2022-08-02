@@ -21,5 +21,17 @@
 	        "question":"What is the activity life cycle",
 	        "answer":"onCreate() onStart() onResume() onPause() onStop() onDestroy()"
 	    }
+	],
+	
+    "third_party_libraries":
+	[
+	    {
+	        "question":"What is Retrofit",
+	        "answer":"Simple network library that is used for network transactions"
+	    },
+	    {
+	        "question":"What is Firebase",
+	        "answer":"Firebase serves as a module between your server and the devices that will be receiving the push notifications that you create"
+	    }
 	]
 }
