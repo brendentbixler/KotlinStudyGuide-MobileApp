@@ -29,15 +29,15 @@
 - Feature - Add Navigation bar
 - Add home menu item to nav bar
 - Pull Android questions
-- - Pull 3rd party questions
+- Pull 3rd party questions
+- Bug - Fix the starting menu icon to match
 
 # Current Task
-- Update Json
+- Add another menu item to nav bar (5 total)
 
 # Backlog
-- Add another menu item to nav bar (5 total)
-- Bug - Fix the starting menu icon to match
 - Enhance UI
+- Update Json
 - Bug - Fix white box at the top
 - Add Fragment that contains the answer onClick
 
