@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.kotlinstudyguide.R
 import com.example.kotlinstudyguide.models.AndroidRecyclerData
 import com.example.kotlinstudyguide.models.KotlinRecyclerData
+import com.example.kotlinstudyguide.models.ThirdRecyclerData
 
 class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.KotlinViewHolder>() {
 
@@ -32,6 +33,20 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.KotlinViewH
         fun androidBind(dataAndroid : AndroidRecyclerData) {
             tvQuestion.text = dataAndroid.question
             tvAnswer.text = dataAndroid.answer
+        }
+    }
+
+    /**
+     * Had to put this view holder in here for some reason
+     * This is the Android Questions View Holder that is used in the Android Adapter
+     */
+    class ThirdViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val tvQuestion = view.findViewById<TextView>(R.id.tvQuestion)
+        val tvAnswer = view.findViewById<TextView>(R.id.tvAnswer)
+
+        fun thirdBind(dataThird : ThirdRecyclerData) {
+            tvQuestion.text = dataThird.question
+            tvAnswer.text = dataThird.answer
         }
     }
 
